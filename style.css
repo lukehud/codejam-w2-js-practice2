@@ -1,0 +1,56 @@
+* {
+    margin: 0;
+    padding: 0;
+}
+
+@font-face {
+    font-family: digital-clock;
+    src: url(digital-7\ \(italic\).ttf);
+}
+
+body {
+    background: #ccc;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    min-height: 100vh; /*this is 100% of the viewport height*/
+    font-family: digital-clock, 'Courier New', Courier, monospace, Verdana, Geneva, Tahoma, sans-serif;
+    color: snow
+}
+
+#clock {
+    display: inline;
+    font-size: 3em;
+    /* font-weight: bold; */
+    text-align: center;
+    margin: auto;
+    padding: 1rem;
+    background: black;
+    letter-spacing: 1vw;
+    border: 2px solid rgb(78, 78, 255);
+    user-select: none;
+}
+
+#remove {
+    display: block;
+    margin: auto;
+    padding: 2rem 3rem;
+    color: snow;
+    background-color: red;
+    cursor: pointer;
+}
+
+#reset {
+    display: block;
+    margin: auto;
+    padding: 2rem 3rem;
+    color: snow;
+    background-color: green;
+    cursor: pointer;
+}
+
+/* @media (max-width: 600px) {
+    height: auto;
+    width: auto;
+} */
